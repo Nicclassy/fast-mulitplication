@@ -94,8 +94,8 @@ def handle_client(connection: socket.socket):
             else:
                 if not succesful_students:
                     fancy_print(GREEN, 
-                        f"{student_name} is the first to 
-                        complete the challenge! Well done!"
+                        f"{student_name} is the first to "
+                        "complete the challenge! Well done!"
                     )
                 with lock:
                     succesful_students.append(student_name)
